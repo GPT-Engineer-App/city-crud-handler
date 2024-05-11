@@ -23,8 +23,7 @@ const Index = () => {
     const response = await fetch("https://api.zerosheets.com/v1/pwh", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      // Ensure the "name" key is a string
-      body: JSON.stringify({ "name": newCity }),
+      body: JSON.stringify({ name: newCity }),
     });
     if (response.ok) {
       fetchCities();
