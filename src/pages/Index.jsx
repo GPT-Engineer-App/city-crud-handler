@@ -24,7 +24,7 @@ const Index = () => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       // Ensure the "name" key is a string
-      body: JSON.stringify({ name: newCity }),
+      body: JSON.stringify({ "name": newCity }),
     });
     if (response.ok) {
       fetchCities();
